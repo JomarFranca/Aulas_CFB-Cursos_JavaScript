@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zaka Cursos</title>
+        
+            <script>
+                const nota = prompt("digite seu ponto:");
+                var res;
+                //Aprovado Máximo -> maior ou igual (>=): 95
+                //Aprovado -> maior ou igual (>=): 60
+                //Recuperação -> maior ou igual (>=): 40 e (&&) menor que (<): 60
+                //Reprovado ->  menor (<): 40 e (&&) menor ou igual (<): 20
+                //Reprovado Máximo -> menor que (<): 20
+
+
+                if(nota >= 60){
+                    res="Aprovado com nota normal";
+                    if(nota >= 95) {
+                        res="Passou Direto!";
+                    }
+                }else if(nota >= 40){
+                    res="Recuperação";
+                }else{
+                    if(nota >=20){
+                    res="Reprovado";
+                    }else{
+                        res="Reprovado com nota baixa";
+                    }
+                }
+                
+
+                document.write(res);
+
+            </script>
+        
+        
+    </head>
+<body>
+
+</body>
+</html>
