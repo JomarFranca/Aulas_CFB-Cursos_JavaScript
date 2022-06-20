@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./estilos.css" />
         <title>Zaka Cursos</title>
-        
-            <script>
-
-                var canal = "Zaka Cursos";
-                var curso = "Curso de JavaScript";
-                var separador = " - ";
-
-
-                var nome = prompt("Digite seu nome:","Seu nome aqui!");
-
-                document.write(nome);
-                
-
-            </script>
-        
-        
     </head>
-<body>
-    
-</body>
+    <body>
+        <script>
+            var canal = 'Zaka Cursos';
+            var curso = 'JavaScript';
+            const separador = '-';
+            const quebra = '\n\n';
+
+            // O prompt pode receber dois parâmetros, o 1º é o nome que vem em cima da caixa de texto, o 2º é o nome que vai dentro da caixa de texto.
+            var nome = prompt('Digite seu nome:', 'Seu nome aqui!');
+
+            alert(nome);
+            document.write(nome);
+        </script>
+    </body>
 </html>
