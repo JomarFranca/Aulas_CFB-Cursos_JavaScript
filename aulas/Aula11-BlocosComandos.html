@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./estilos.css" />
         <title>Zaka Cursos</title>
-        
-            <script>
-                
-                var num = prompt('Digite um numero: ');
-
-                if (num > 10) res='Maior que 10';
-                    else res='Menor que 10';
-
-                document.write(res);
-                alert(res);
-
-
-            </script>
-        
-        
     </head>
-<body>
+    <body>
+        <script>
+            var num = prompt('Digite um numero: ');
+// Quando o é passado apenas uma função pro IF e Else, ele não precisa de Chaves ({}) pra delimitar a função. 
+            if (num > 10) 
+                res = 'Maior que 10';
+            else
+                res = 'Menor que 10';
 
-</body>
+            alert(res);
+            document.write(res);
+        </script>
+    </body>
 </html>
