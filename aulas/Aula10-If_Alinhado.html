@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./estilos.css" />
         <title>Zaka Cursos</title>
-        
-            <script>
-                const nota = prompt("digite seu ponto:");
-                var res;
-                //Aprovado Máximo -> maior ou igual (>=): 95
-                //Aprovado -> maior ou igual (>=): 60
-                //Recuperação -> maior ou igual (>=): 40 e (&&) menor que (<): 60
-                //Reprovado ->  menor (<): 40 e (&&) menor ou igual (<): 20
-                //Reprovado Máximo -> menor que (<): 20
-
-
-                if(nota >= 60){
-                    res="Aprovado com nota normal";
-                    if(nota >= 95) {
-                        res="Passou Direto!";
-                    }
-                }else if(nota >= 40){
-                    res="Recuperação";
-                }else{
-                    if(nota >=20){
-                    res="Reprovado";
-                    }else{
-                        res="Reprovado com nota baixa";
-                    }
-                }
-                
-
-                document.write(res);
-
-            </script>
-        
-        
     </head>
-<body>
+    <body>
+        <script>
+            const nota = prompt('digite seu ponto:');
+            var res;
+            //Aprovado Máximo   -> maior ou igual (>=): 95
+            //Aprovado Normal   -> maior ou igual (>=): 60
+            //Recuperação       -> maior ou igual (>=): 40 e (&&) menor que (<): 60
+            //Reprovado         -> menor (<): 40 e (&&) menor ou igual (<): 20
+            //Reprovado Máximo  -> menor que (<): 20
 
-</body>
+            if (nota >= 60) {
+                res = 'Aprovado';
+                if (nota >= 95) {
+                    res += ' Máximo!';
+                }else{
+                    res += ' Normal!'
+                }               
+            } else if (nota >= 40) {
+                res = 'Recuperação';
+            } else {
+                res = 'Reprovado';
+                if (nota >= 20) {
+                    res += ' Normal!';
+                } else {
+                    res += ' Máximo!';
+                }
+            }
+
+            document.write(res);
+        </script>
+    </body>
 </html>
