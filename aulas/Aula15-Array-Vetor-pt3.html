@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./estilos.css" />
+        <title>Zaka Cursos</title>
+    </head>
+    <body>
+        <script>
+            /* var cor = new Array(); 
+            (Outro método de criação de array)
+
+            método de criação de array:
+            variável.indexOf    = indica a posição no Array
+            variável.sort       = ordena o Array
+            variável.reverse    = reverte a ordenação do Array
+            variável.join       = junta todos elementos de um array, em uma variável só
+            variável.length     = retorna o tamanho do Array
+            variável.concat     = concatena os elementos de um ou mais Arrays em uma 
+                                variável só apenas.
+
+            */
+            var mochila = [], pos;
+            var mochila1 = [], mochilaAll=[];
+            var obj = prompt('Digite o item:')
+            var num = [5,8,4,9,7,6,3,0,2,1];
+            var numeros;
+
+
+            num.sort();
+            num.reverse();
+
+            numeros=num.join();
+            document.write(numeros+ '<br>');
+
+            document.write(num[0]+ '<br>');
+            document.write(num[1]+ '<br>');
+            document.write(num[2]+ '<br>');
+            document.write(num[3]+ '<br>');
+            document.write(num[4]+ '<br>');
+            document.write(num[5]+ '<br>');
+            document.write(num[6]+ '<br>');
+            document.write(num[7]+ '<br>');
+            document.write(num[8]+ '<br>');
+            document.write(num[9]+ '<br>');
+        
+            mochila.push("Faca");
+            mochila.push("Corda");
+            mochila.push("Perdeneira");
+            mochila.push("Chave");
+            mochila.push("Lanterna");
+            mochila.push("Pedra");
+
+            mochila1.push("Arame");
+            mochila1.push("Luvas");
+            mochila1.push("Joelheira");
+            mochila1.push("Meias");
+            mochila1.push("Moeda");
+            mochila1.push("Canivete");
+
+            mochilaAll=mochila.concat(mochila1);
+
+            document.write(mochilaAll[10]+'<br>');
+
+            pos = mochila.indexOf(obj);
+
+            if (pos < 0){
+                document.write("Item não existe na mochila")
+            }else{
+                document.write("Item está na mochila <br> na posição: "+pos);
+            }
+
+            console.log();
+
+        </script>
+    </body>
+</html>
