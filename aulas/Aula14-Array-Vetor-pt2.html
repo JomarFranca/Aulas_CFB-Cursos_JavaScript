@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./estilos.css" />
+        <title>Zaka Cursos</title>
+    </head>
+    <body>
+        <script>
+            /* var cor = new Array(); 
+            (Outro método de criação de array)
+
+            método de criação de array:
+            variável.push       = inseri(adiciona) no final do Array,
+            variável.unshift    = inseri(adiciona) no inicio do Array,
+            variável.pop        = remove no final do Array
+            variável.shift      = remove no inicio do Array
+            variável.splice     = remove a partir do parâmetro que for passado,
+                                sendo o 1º parâmetro a posição e o 2º parâmetro
+                                a quantidade de itens a serem removidos.
+
+            */
+            var mochila = [];
+        
+            mochila.push("Faca");
+            mochila.push("Corda");
+            mochila.push("Perdeneira");
+            mochila.push("Chave");
+            mochila.push("Lanterna");
+
+            mochila.unshift("Pedra");
+
+            mochila.pop();
+            mochila.shift();
+            mochila.splice(2,1);
+
+            document.write(mochila[0] + '<br>');
+            document.write(mochila[1] + '<br>');
+            document.write(mochila[2] + '<br>');
+            document.write(mochila[3] + '<br>');
+            document.write(mochila[4] + '<br>');
+            document.write(mochila[5] + '<br>');
+
+            console.log(mochila.length);
+
+        </script>
+    </body>
+</html>
