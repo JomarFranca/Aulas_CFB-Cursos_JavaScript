@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./estilos.css" />
+        <title>Zaka Cursos</title>
+    </head>
+
+    <body>
+        <script>
+            /*
+                Comando While: p1;
+                    while(p2){
+                        comandos;
+                        p3;
+                }
+                1º Parâmetro  = Inicialização do contador
+                2º Parâmetro  = Condição de execução do loop
+                3º Parâmetro  = Incremento ou decremento do contador
+
+                 */
+
+                
+            // Exemplo nº 01 - Fazendo a contagem
+            var num;
+
+            num=0;
+            while(num<10){
+                document.write('Zaka Cursos<br>');
+                num++;
+            }
+            document.write('<hr>');
+
+            // Exemplo nº 02 
+            
+            num=10;
+            while(num--){
+                document.write('Zaka Cursos<br>');
+            }
+            document.write('<hr>');
+
+            // Exemplo nº 03
+
+            num=true;
+            cont=0;
+            while(num){
+                document.write('Zaka Cursos<br>');
+                cont++;
+                if(cont>9){
+                    num=false;
+                }
+            }
+
+        </script>
+    </body>
+</html>
