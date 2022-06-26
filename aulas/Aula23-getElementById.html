@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./estilos.css" />
+        <title>Zaka Cursos</title>
+    </head>
+
+    <body>
+        <div>
+            <p id="texto">Zaka Cursos</p>
+            <div id="caixa"></div>
+        </div>
+        <script>
+            /*
+            Elemento getElementById:
+
+             */
+            // Exemplo nº 1
+            document.getElementById('texto').style.color = '#f00';
+
+            // Usando variável
+            var txt = document.getElementById('texto')            
+            txt.style.fontSize = '50px';
+
+            var cx = document.getElementById('caixa');
+            cx.style.border="1px solid #000";
+            cx.style.width="300px";
+            cx.style.height="300px";
+            cx.style.backgroundColor="#aaa";
+
+        </script>
+    </body>
+</html>
