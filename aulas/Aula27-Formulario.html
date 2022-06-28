@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./estilos.css" />
+        <title>Zaka Cursos</title>
+        <style>
+            label {
+                display: block;
+            }
+
+            input {
+                display: block;
+            }
+
+            input[type="submit"],label {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="#" method="post" id="curso1" name="cursoOne">
+            <label>Nome:</label>
+            <input type="text" name="fNome" id="teste" value="Primeiro - 1">
+            <label for="">Senha:</label>
+            <input type="password" name="fSenha" value="123">
+            <input type="submit" name="btEnviar" value="Enviar">
+        </form>
+        <br><hr>
+        <!-- <form action="#" method="post" id="curso2" name="cursoTwo">
+            <label>Nome:</label>
+            <input type="text" name="fNome" id="teste" value="Segundo - 2">
+            <label for="">Senha:</label>
+            <input type="password" name="fSenha" value="123">
+            <input type="submit" name="btEnviar" value="Enviar">
+        </form>
+        <br><hr><br> -->
+        <script>
+
+            /*
+            // Ex. usando vetor
+            var fm = document.forms[1].id;
+            document.write(fm+"<br>");
+
+            // Ex. usando item 
+            var fm = document.forms.item(0).name;
+            document.write(fm+"<br>");     
+            
+            // Ex. usando elementos
+            var fm = document.forms[0].elements[1].value;
+            document.write(fm+"<br>");
+            */
+
+            document.write(document.getElementById("curso1").elements[0].value);
+
+            var fm = document.forms[0];
+            var el = fm.elements;
+
+            for (var i=0; i<el.length-1;i++) {
+                el[i].style.backgroundColor="#ddd";
+                el[i].value="Curso de JavaScript"
+            }
+            
+            //document.write(fm+"<br>");
+        
+
+        </script>
+    </body>
+</html>
