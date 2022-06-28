@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./estilos.css" />
-        <title>Zaka Cursos</title>
-    </head>
 
-    <body>
-        <div>
-            <p id="texto">Zaka Cursos</p>
-            <input type="text" id="cxtexto" value="Caixa de Texto" />
-            <div id="div">Texto da Div</div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos.css" />
+    <title>Zaka Cursos</title>
+</head>
+
+<body>
+    <div>
+        <p id="texto">Zaka Cursos</p>
+        <input type="text" id="cxtexto" value="Caixa de Texto" />
+        <div id="div">Texto da Div</div>
         <script>
             /*
             Comando InnerHTML:
             Ajuda a pegar um valor de qualquer Tag
              */
             // Exemplo nº 1 - pegando o valor de um input
-            var cxt = document.getElementById("cxtexto").value="Curso de JavaScript";
-            //alert(cxt);
+            var cxt = document.getElementById("cxtexto").value = "Curso de JavaScript";
 
             // Exemplo nº 2 - pegando o valor da Tag "P"
             var txt = document.getElementById("texto").innerHTML = "Aula 24";
-            
 
             // Exemplo nº 3 - pegando o valor da Tag "Div"
             var txt = document.getElementById("div").innerHTML = "Novo Texto";
-            
-
         </script>
-    </body>
+</body>
+
 </html>

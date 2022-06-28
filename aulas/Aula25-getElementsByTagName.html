@@ -9,26 +9,28 @@
     </head>
 
     <body>
-        <div>
-            <p id="texto">Zaka Cursos</p>
-            <input type="text" id="cxtexto" value="Caixa de Texto" />
-            <div id="div">Texto da Div</div>
+        <p>Zaka Cursos</p>
+        <p>Curso de JavaScript</p>
+        <p>Aula 25</p>
+        <p>www.youtube.com/cfbcursos</p>
+        <p>cfbcursos.com.br</p>
+        <hr/>
+
         <script>
             /*
-            Comando InnerHTML:
-            Ajuda a pegar um valor de qualquer Tag
+            Comando getElementsByTagName:            
+            
              */
-            // Exemplo nº 1 - pegando o valor de um input
-            var cxt = document.getElementById("cxtexto").value="Curso de JavaScript";
-            //alert(cxt);
-
-            // Exemplo nº 2 - pegando o valor da Tag "P"
-            var txt = document.getElementById("texto").innerHTML = "Aula 24";
             
+             // Exemplo nº 1
+            var tagsP = document.getElementsByTagName("p");
 
-            // Exemplo nº 3 - pegando o valor da Tag "Div"
-            var txt = document.getElementById("div").innerHTML = "Novo Texto";
-            
+            document.write(tagsP[0].innerHTML);
+            tagsP[3].style.color="#f00";
+
+            for (var i = 0; i < tagsP.length; i++) {
+                tagsP[i].style.color="#0f0";
+            }
 
         </script>
     </body>
