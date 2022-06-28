@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./estilos.css" />
+        <title>Zaka Cursos</title>
+        <style>
+            .titulo {
+                color: #f00;
+                font-size: 20px;
+                text-decoration: underline;
+            }
+
+            div {
+                border: 1px solid #000;
+                padding: 10px;
+                display: inline-block;
+            }
+
+            a {
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 class="titulo">querySelectorAll</h1>
+        <p>
+            o querySelectorAll() é um método que retorna os elementos do
+            documento que correspondem a uma classe de CSS ou a uma tag
+            especifica
+        </p>
+        <h2 class="titulo">Curso de JavaScript</h2>
+        <p>www.youtube.com/cfbcursos</p>
+        <p class="titulo">cfbcursos.com.br</p>
+        <div>
+            <h3>Aula 26</h3>
+            <p>Este texto está dentro de uma div</p>
+            <p>Este também</p>
+        </div>
+        <a href="http://www.youtube.com/cfbcursos" target="_blank">CANAL</a>
+        <a href="http://www.cfbcursos.com.br" target="_blank">SITE</a>
+
+        <hr />
+        <script>
+            // Exemplo nº 1 - usando pra pegar tags
+            var ps = document.querySelectorAll('p');
+            var ps1 = ps[0].innerHTML;
+            document.write(ps1 + '<br><br>');
+
+            // Exemplo nº 2 - usando pra pegar class
+            var elementos = document.querySelectorAll('.titulo');
+            for (var i = 0; i < elementos.length; i++) {
+                document.write(elementos[i].innerHTML + '<br>');
+            }
+
+            // Exemplo nº 3 - usando pra pegar tag com class especifica
+            var elementos = document.querySelectorAll('div > *');
+            for (var i = 0; i < elementos.length; i++) {
+                elementos[i].style.color = '#00f';
+            }
+        </script>
+    </body>
+</html>
